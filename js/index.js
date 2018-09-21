@@ -7,7 +7,7 @@
 const express = require('express');
 const app = express();
 var path = require('path');
-const port = 3000;
+const port = prcess.env.PORT || 8080;
 
 
 //Controller
@@ -15,6 +15,7 @@ const port = 3000;
 app.use('/css', express.static(path.join(__dirname + '/../css')));
 app.use('/js', express.static(path.join(__dirname + '/../js')));
 app.use('/assets', express.static(path.join(__dirname + '/../assets')));
+// app.get(['/', '/index.html'], (req, res) => res.render(path.join(__dirname + '/../index/')))
 app.get(['/', '/index.html'], (req, res) => res.sendFile(path.join(__dirname + '/../index.html')))
 // app.get('/about-us', (req, res) => res.sendFile(path.join(__dirname + '/../about-us.html')))
 
