@@ -7,7 +7,7 @@
 const express = require('express');
 const app = express();
 var path = require('path');
-const port = prcess.env.PORT || 8080;
+const port = process.env.PORT || 8080;
 
 
 //Controller
