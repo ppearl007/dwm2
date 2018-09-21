@@ -2,7 +2,13 @@ $(document).ready(function(){
     $('.parallax').parallax();
     setTimeout(function(){
         $('.banner-text').removeClass('animate');
-    }, 00);
+    }, 100);
+
+    // setTimeout(function(){
+    //     $('.banner-text').animate({
+    //         transform: "translateY(-2em)"
+    //     });
+    // }, 1000);
 
     $(window).scroll(function(){
         $('#vision, #mission').fadeIn(2000);
