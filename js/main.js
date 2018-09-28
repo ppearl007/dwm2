@@ -1,5 +1,6 @@
 $(document).ready(function(){
     $('.parallax').parallax();
+    
     setTimeout(function(){
         $('.banner-text').removeClass('animate');
     }, 100);
